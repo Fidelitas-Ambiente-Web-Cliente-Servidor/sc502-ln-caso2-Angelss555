@@ -1,0 +1,346 @@
+/*
+Hecho por Ángel Felipe Rodríguez Vargas
+*/
+
+body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    
+    /* Fondo azul */
+    background: radial-gradient(circle at 20% 20%, rgba(253, 251, 251, 0.678) 0%, transparent 40%),
+                linear-gradient(135deg, #0674bd 0%, #0284c7 50%, #0369a1 100%);
+    background-attachment: fixed;
+    color: #0f172a;
+    margin: 0;
+    padding: 20px;
+}
+
+a{
+    color: #f1f6f8;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #38bdf8;
+}
+
+h1 {
+    color: #ffffff;
+
+    /* Texto brillante */
+    text-shadow: 0 0 12px rgba(56, 189, 248, 0.9), 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+h2{
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(56, 189, 248, 0.8), 0 1px 2px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+h4 {
+    color: #ffffff;
+
+    /* Resplandor de texto Frutiger Aero */
+    text-shadow: 0 0 12px rgba(56, 189, 248, 0.9), 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+p {
+    color: #ffffff;
+    font-size: 24px; 
+    text-shadow: 0 0 10px rgba(56, 189, 248, 0.8), 0 1px 2px rgba(0, 0, 0, 0.15);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+
+form {
+
+    /* Efecto de vidrio */
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(224, 242, 254, 0.85) 100%);
+    width: 350px;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 24px; 
+    border: 2px solid rgba(255, 255, 255, 0.9);
+
+    /* Glow azul*/
+    box-shadow: 0 0 30px rgba(56, 189, 248, 0.4), 
+                inset 0 3px 6px rgba(255, 255, 255, 1);
+}
+
+input {
+    width: 95%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #7dd3fc;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: inset 0 2px 4px rgba(0, 114, 255, 0.08);
+    transition: all 0.3s ease-in-out;
+}
+
+input:focus {
+    outline: none;
+    border-color: #38bdf8;
+    background: #ffffff;
+
+    /* Glow intenso al enfocar */
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.7), inset 0 1px 2px rgba(0,0,0,0.05);
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+
+    /* Botón de agua */
+    background: linear-gradient(180deg, #7dd3fc 0%, #38bdf8 45%, #0284c7 50%, #0369a1 100%);
+    color: white;
+    font-weight: bold;
+    border: 1px solid #0284c7;
+    border-radius: 25px;
+
+    /* Brillo al pasar el mouse */
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.6), 
+                inset 0 2px 3px rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background: linear-gradient(180deg, #bae6fd 0%, #7dd3fc 45%, #38bdf8 50%, #0284c7 100%);
+    box-shadow: 0 0 25px rgba(56, 189, 248, 0.9), 
+                inset 0 2px 3px rgba(255, 255, 255, 0.9);
+    transform: scale(1.02);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Parte del administrador */
+header {
+
+    /* Barra translúcida */
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.1) 100%);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 15px;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(3, 105, 161, 0.2);
+}
+
+header h1 {
+    color: white;
+    text-align: left;
+    margin: 0;
+}
+
+nav {
+    width: 200px;
+    float: left;
+    background: rgba(255, 255, 255, 0.459);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 15px;
+    min-height: 300px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 10px 25px rgba(3, 105, 161, 0.15);
+    margin-top: 15px;
+}
+
+nav h3 {
+    margin-top: 0;
+    color: #0369a1;
+    text-shadow: 0 0 8px rgba(56, 189, 248, 0.3);
+}
+
+section {
+    margin-left: 250px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.315);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.527);
+    box-shadow: 0 10px 25px rgba(3, 105, 161, 0.15);
+    margin-top: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Botones de navegación */
+nav a,
+td a {
+    display: inline-block;
+    background: linear-gradient(180deg, #e0f2fe 0%, #38bdf8 40%, #0284c7 100%);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 18px;
+    margin: 5px;
+    font-weight: 600;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 4px 12px rgba(56, 189, 248, 0.4), 
+                inset 0 1px 2px rgba(255, 255, 255, 0.8);
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+    transition: all 0.2s;
+}
+
+nav a:hover,
+td a:hover {
+    background: linear-gradient(180deg, #ffffff 0%, #7dd3fc 40%, #38bdf8 100%);
+    color: #0369a1;
+    box-shadow: 0 0 18px rgba(56, 189, 248, 0.8);
+    border-color: #ffffff;
+}
+
+/* Tablas brillantes */
+table, .tabla-datos {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+.tabla-datos {
+    width: 100%;
+    max-width: 900px;
+}
+
+th, .tabla-datos th {
+    background: linear-gradient(180deg, #38bdf8 0%, #0284c7 100%);
+    color: white;
+    padding: 12px;
+    font-weight: 600;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+td, .tabla-datos td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid rgba(56, 189, 248, 0.15);
+    border-right: 1px solid rgba(56, 189, 248, 0.15);
+    color: #0f172a;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+tr:hover {
+    background-color: rgba(224, 242, 254, 0.5);
+}
+
+/* Mensajes */
+#mensaje {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Parte del usuario */
+header p {
+    color: rgba(255, 255, 255, 0.95);
+}
+
+section p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Botones generales */
+.btn {
+    display: inline-block;
+    background: linear-gradient(180deg, #ffffff 0%, #e2e8f0 100%);
+    color: #475569;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: 1px solid #cbd5e1;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05), inset 0 1px 0 #fff;
+    transition: all 0.2s;
+}
+
+.btn:hover {
+    background: linear-gradient(180deg, #f8fafc 0%, #cbd5e1 100%);
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.6);
+}
+
+.btn-primario {
+    background: linear-gradient(180deg, #7dd3fc 0%, #0284c7 100%);
+    color: white;
+    border: 1px solid #0284c7;
+    box-shadow: 0 4px 15px rgba(56, 189, 248, 0.4);
+}
+
+.btn-primario:hover {
+    background: linear-gradient(180deg, #bae6fd 0%, #0369a1 100%);
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.7);
+}
+
+.btn-secundario {
+
+    /* Azul marino */
+    background: linear-gradient(180deg, #0284c7 0%, #1e3a8a 100%);
+    color: white;
+    border: 1px solid #1e3a8a;
+    box-shadow: 0 4px 15px rgba(30, 58, 138, 0.3);
+}
+
+.btn-secundario:hover {
+    background: linear-gradient(180deg, #0369a1 0%, #172554 100%);
+    box-shadow: 0 0 20px rgba(30, 58, 138, 0.5);
+}
+
+/* Mensajes del sistema */
+.mensaje {
+    width: 100%;
+    max-width: 900px;
+    margin: 10px auto;
+    padding: 12px;
+    text-align: center;
+    border-radius: 14px;
+    font-weight: 600;
+}
+
+.mensaje.info {
+    background: rgba(255, 255, 255, 0.9);
+    color: #0369a1;
+    border: 2px solid #7dd3fc;
+    box-shadow: 0 0 15px rgba(125, 211, 252, 0.5);
+}
+
+.mensaje.success {
+
+    /* Mensaje de éxito */
+    background: linear-gradient(180deg, #f0fdfa 0%, #ccfbf1 100%);
+    color: #042f2e;
+    border: 2px solid #2dd4bf;
+    box-shadow: 0 0 15px rgba(45, 212, 191, 0.5);
+}
+
+.mensaje.error {
+    /* Mensaje de error */
+    background: linear-gradient(180deg, #ffffff 0%, #eff6ff 100%);
+    color: #1e3a8a;
+    border: 2px solid #3b82f6;
+    box-shadow: 0 0 15px rgba(59, 130, 246, 0.5);
+}
